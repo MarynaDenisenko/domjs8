@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.active {
+    background-color: rgba(255, 255, 0, .2);
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100vh;
+}
+
+.modal_active {
+    display: flex;
+}
+
+.innerModal {
+    width: 50%;
+    height: 300px;
+    background-color: white;
+    overflow: auto;
+}
